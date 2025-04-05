@@ -1,0 +1,72 @@
+		
+		body {
+            background-image: url('itachi.jpg'); /* Set background image */
+            background-size: cover;
+            background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+            color: white;
+            font-family: Arial, sans-serif;
+			padding-top: 80px;
+        }
+		h3{
+			font-family: 'Poppins', Times New Roman;
+            font-size: 2rem;
+            font-weight: 600;
+            margin: fixed;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        h3:hover {
+            color: rgba(255, 103, 111);
+        }
+		
+		.calendar-container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 20px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .calendar-header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .calendar-body {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 1px;
+        }
+
+        .calendar-day {
+            text-align: center;
+            padding: 8px;
+            background-color: rgba(169,169,169, 0.4);
+            border: 1px solid #444;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .calendar-day:hover {
+            background-color: #555;
+        }
+
+        .calendar-day.disabled {
+            background-color: #555;
+            cursor: not-allowed;
+        }
+		.btn-custom {
+            background-color: #gray;
+            color: white;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: rgba(169,169,169);;
+        }
